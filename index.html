@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculasdora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form class="card" onsubmit="return false;"></form>
+    <h1>Calcule seu IMC e Peso Ideal</h1>
+
+    <div class="linha">
+        <label for="txtpeso">Informe seu peso(kg): </label>
+        <input type="text" id="txtpeso" />
+    </div>
+    </br>
+
+
+    <div class="linha">
+        <label for="txtaltura">Informe seu Altura(m): </label>
+        <input type="text" id="txtaltura" />
+    </div>
+    </br>
+
+
+    <div class="linha">
+        <label>Informe o Sexo: </label>
+        <span class="sexo-opcoes"></span>
+        <label><input type = "radio" name="sexo" id="rdFeminino" Value="F" checked />Feminino</label>
+        <label><input type = "radio" name="sexo" id="rdMasculino" Value="M" checked />Masculino</label>
+    </div>
+    </br>
+
+    
+    <div class="linha resultado">
+        <label for="txtimc">O valor do seu IMC é: </label>
+        <input type="text" id="txtimc" readonly />
+    </div>
+    </br>
+
+
+    <div class="linha resultado">
+        <label for="txtpid">Seu peso ideal é: </label>
+        <input type="text" id="txtpid" readonly />
+    </div>
+
+    <span id="resp"></span>
+
+    <textarea id = "txtmsg" cols="40" rows="8" readonly></textarea>
+
+
+    <div class="botoes">
+        <input type="button" value="Calcular" onclick="Calcular()" />
+        <input type="button" value="Limpar" onclick="Limpar()" />
+    </div>
+</body>
+</html>
