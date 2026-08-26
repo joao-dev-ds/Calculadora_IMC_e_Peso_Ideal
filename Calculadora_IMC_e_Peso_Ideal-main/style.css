@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eeeff1;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.card {
+  background: #fff;
+  width: 420px;
+  border: 1px solid #333;
+  border-radius: 0px;
+  padding: 20px 25px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 25px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.linha label {
+  width: 160px;
+  font-size: 14px;
+}
+
+.linha input[type="text"],
+.linha input[type="number"] {
+  width: 180px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 4px;
+  font-family: "Consolas", monospace;
+  font-size: 14px;
+}
+
+.linha input[disabled] {
+  background-color: #f9f9f9;
+  color: #000;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+.sexo-opcoes {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botoes input {
+  padding: 6px 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botoes input:hover {
+  background: #d0d0d0;
+}
