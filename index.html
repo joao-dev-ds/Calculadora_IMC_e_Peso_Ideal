@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <form class="card" onsubmit="return false;">
+    <h1>Calcule seu IMC e Peso Ideal</h1>
+
+    <div class="linha">
+      <label for="txtpeso">Informe seu peso:</label>
+      <input type="text" id="txtpeso">
+    </div>
+
+    <div class="linha">
+      <label for="txtaltura">Informe sua Altura:</label>
+      <input type="text" id="txtaltura">
+    </div>
+
+    <div class="linha">
+      <label>Informe o Sexo:</label>
+      <span class="sexo-opcoes">
+        <label><input type="radio" name="sexo" id="rdFeminino" value="F" checked> Feminino</label>
+        <label><input type="radio" name="sexo" id="rdMasculino" value="M"> Masculino</label>
+      </span>
+    </div>
+
+    <div class="linha">
+      <label for="txtimc">O valor do seu IMC é:</label>
+      <input type="text" id="txtimc" readonly disabled tabindex="-1">
+    </div>
+
+    <div class="linha">
+      <label for="txtpid">Seu peso ideal é:</label>
+      <input type="text" id="txtpid" readonly disabled tabindex="-1">
+    </div>
+
+    <div class="linha">
+      <label for="txtclassificacao">Classificação do IMC:</label>
+      <input type="text" id="txtclassificacao" readonly disabled tabindex="-1">
+    </div>
+
+    <div class="botoes">
+      <input type="button" value="Calcular" onclick="calcular()">
+      <input type="button" value="Limpar" onclick="limpar()">
+    </div>
+  </form>
+
+</body>
+</html>
